@@ -1,0 +1,74 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model PlcNode {
+  id        Int      @id @default(autoincrement())
+  ipAddress String?
+  name      String?
+  status    String?  @default("Offline")
+  createdAt DateTime @default(now())
+
+  @@map("plcnode")
+}
+
+model PlcConfig {
+  id           Int      @id @default(autoincrement())
+  settingKey   String?
+  settingValue String?
+  updatedAt    DateTime @updatedAt
+
+  @@map("plc_config")
+}
+
+model PlcData {
+  id        Int      @id @default(autoincrement())
+  tag       String?
+  value     Float?
+  timestamp DateTime @default(now())
+
+  @@map("plc_data")
+}
+
+model ModbusLog {
+  id        Int      @id @default(autoincrement())
+  nodeName  String
+  register  String
+  value     Float
+  status    String
+  timestamp DateTime @default(now())
+
+  @@map("plc_data_logs")
+}
+
+model PlcDataRealtime {
+  id          Int      @id @default(autoincrement())
+  tag         String?
+  value       Float?
+  lastUpdated DateTime @default(now())
+
+  @@map("plc_data_realtime")
+}
+
+model DashboardUser {
+  id          Int      @id @default(autoincrement())
+  name        String?
+  username    String   @unique
+  password    String?
+  role        String   @default("Operator")
+  status      String   @default("ACTIVE")
+  email       String?
+  jobRole     String?
+  phone       String?
+  department  String?
+  securityPin String?
+  photo       String?  @db.LongText
+  createdAt   DateTime @default(now())
+
+  @@map("user")
+}

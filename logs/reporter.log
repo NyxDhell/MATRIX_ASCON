@@ -1,0 +1,268 @@
+2026-04-20T08:34:49.787Z - info: Initializing jsreport (version: 4.12.0, configuration file: jsreport.config.json, nodejs: 22.20.0)
+2026-04-20T08:34:49.789Z - info: Searching for available extensions in D:\web_plc\plc-dashboard\
+2026-04-20T08:34:49.792Z - info: Extensions location cache not found, crawling directories
+2026-04-20T08:34:55.157Z - info: Found 35 extension(s)
+2026-04-20T08:34:55.223Z - info: Using extension base@4.1.0
+2026-04-20T08:34:55.227Z - info: Using extension child-templates@4.2.0
+2026-04-20T08:34:55.230Z - info: Using extension cli@4.2.0
+2026-04-20T08:34:55.232Z - info: Using extension components@4.1.0
+2026-04-20T08:34:55.234Z - info: Using extension data@4.2.0
+2026-04-20T08:34:55.235Z - info: Using extension express@4.3.1
+2026-04-20T08:34:55.534Z - info: Using extension freeze@4.1.0
+2026-04-20T08:34:55.536Z - info: Using extension fs-store@4.2.0
+2026-04-20T08:34:55.641Z - info: Using extension handlebars@4.1.0
+2026-04-20T08:34:55.642Z - info: Using extension import-export@4.1.0
+2026-04-20T08:34:55.650Z - info: Using extension jsrender@4.1.0
+2026-04-20T08:34:55.651Z - info: Using extension licensing@4.1.0
+2026-04-20T08:34:55.657Z - info: Using extension localization@4.1.0
+2026-04-20T08:34:55.658Z - info: Using extension npm@4.1.0
+2026-04-20T08:34:55.663Z - info: Using extension pdf-utils@4.5.3
+2026-04-20T08:34:55.666Z - info: Using extension reports@4.3.0
+2026-04-20T08:34:55.669Z - info: Using extension tags@4.1.0
+2026-04-20T08:34:55.670Z - info: Using extension text@4.1.0
+2026-04-20T08:34:55.672Z - info: Using extension version-control@4.2.1
+2026-04-20T08:34:55.683Z - info: Using extension assets@4.3.0
+2026-04-20T08:34:55.695Z - info: Using extension authorization@4.2.0
+2026-04-20T08:34:55.700Z - info: Using extension browser-client@4.2.0
+2026-04-20T08:34:55.703Z - info: Using extension chrome-pdf@4.4.0
+2026-04-20T08:34:55.707Z - info: Using extension docx@4.10.1
+2026-04-20T08:34:55.709Z - info: Using extension html-to-xlsx@4.4.0
+2026-04-20T08:34:55.876Z - info: html-to-xlsx detected chrome as available html engine
+2026-04-20T08:34:55.877Z - info: Using extension pptx@4.5.0
+2026-04-20T08:34:55.878Z - info: Using extension scheduling@4.2.0
+2026-04-20T08:34:55.899Z - info: Using extension scripts@4.3.0
+2026-04-20T08:34:55.901Z - info: Using extension static-pdf@4.2.0
+2026-04-20T08:34:55.901Z - info: Using extension studio@4.4.1
+2026-04-20T08:34:55.995Z - info: Using extension xlsx@4.6.1
+2026-04-20T08:34:55.997Z - info: Using extension public-templates@4.1.0
+2026-04-20T08:34:55.998Z - info: Using extension sample-template@4.1.0
+2026-04-20T08:34:56.000Z - info: Using extension studio-theme-dark@4.1.0
+2026-04-20T08:34:56.001Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2026-04-20T08:34:56.002Z - info: Using fs provider for template store.
+2026-04-20T08:34:56.006Z - info: fs store is persisting using fs for D:\web_plc\plc-dashboard\data
+2026-04-20T08:34:56.010Z - info: fs store is loading data
+2026-04-20T08:34:56.016Z - info: fs store is initialized successfully
+2026-04-20T08:34:56.025Z - info: Creating default express app.
+2026-04-20T08:34:56.041Z - info: jsreport server successfully started on http port: 5488
+2026-04-20T08:34:56.043Z - info: Verifying license key free
+2026-04-20T08:34:56.046Z - info: Using free license
+2026-04-20T08:34:56.067Z - info: pdf footers check started
+2026-04-20T08:34:56.068Z - info: pdf footers check finished without found problems
+2026-04-20T08:34:56.090Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2026-04-20T08:34:56.101Z - info: Migration successful
+2026-04-20T08:34:56.302Z - info: Initializing worker threads
+2026-04-20T08:34:56.908Z - info: 2 worker threads initialized in 606ms
+2026-04-20T08:34:56.908Z - info: Starting temp files cleanup with 180000ms threshold
+2026-04-20T08:34:56.909Z - info: reporter initialized
+2026-04-20T08:36:55.692Z - info: Render request 1 queued for execution and waiting for available worker rootId=9humrdcglmscbyq, id=9humrdcglmscbyq
+2026-04-20T08:36:55.722Z - warn: Report render failed
+(because) unable to parse request data
+(because) unexpected non-whitespace character after JSON at position 2 (line 1 column 3)
+SyntaxError: Unexpected non-whitespace character after JSON at position 2 (line 1 column 3)
+  at JSON.parse (<anonymous>)
+  at normalizeJSONData (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\shared\request.js:66:19)
+  at module.exports (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\shared\request.js:41:23)
+  at WorkerReporter._render (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:107:21)
+  at D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:234:35
+  at WorkerReporter.executeWorkerAction (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:229:12)
+  at Object.execute (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\worker\workerHandler.js:52:23)
+  at execute (D:\web_plc\plc-dashboard\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:92:23)
+  at processAndResponse (D:\web_plc\plc-dashboard\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:42:23)
+  at MessagePort.<anonymous> (D:\web_plc\plc-dashboard\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:113:12)
+  at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+  at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+wrapped by:
+Error: Unable to parse request data
+(because) unexpected non-whitespace character after JSON at position 2 (line 1 column 3)
+  at module.exports (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+  at normalizeJSONData (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\shared\request.js:68:13)
+  at module.exports (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\shared\request.js:41:23)
+  at WorkerReporter._render (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\worker\render\render.js:107:21)
+  at D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:234:35
+  at WorkerReporter.executeWorkerAction (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\worker\reporter.js:229:12)
+  at Object.execute (D:\web_plc\plc-dashboard\node_modules\@jsreport\jsreport-core\lib\worker\workerHandler.js:52:23)
+  at execute (D:\web_plc\plc-dashboard\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:92:23)
+  at processAndResponse (D:\web_plc\plc-dashboard\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:42:23)
+  at MessagePort.<anonymous> (D:\web_plc\plc-dashboard\node_modules\@jsreport\advanced-workers\lib\workerHandler.js:113:12)
+  at [nodejs.internal.kHybridDispatch] (node:internal/event_target:827:20)
+  at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28) rootId=9humrdcglmscbyq, id=9humrdcglmscbyq
+2026-04-20T08:39:29.337Z - info: Render request 2 queued for execution and waiting for available worker rootId=3mrnt4dcy34fryn, id=3mrnt4dcy34fryn
+2026-04-20T08:39:29.348Z - info: Starting rendering request 2 rootId=3mrnt4dcy34fryn, id=3mrnt4dcy34fryn
+2026-04-20T08:39:29.348Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=3mrnt4dcy34fryn, id=3mrnt4dcy34fryn
+2026-04-20T08:39:31.145Z - info: Rendering request 2 finished in 1809 ms rootId=3mrnt4dcy34fryn, id=3mrnt4dcy34fryn
+2026-04-20T08:40:13.033Z - info: Render request 3 queued for execution and waiting for available worker rootId=ai2z5cgt0x21h9b, id=ai2z5cgt0x21h9b
+2026-04-20T08:40:13.043Z - info: Starting rendering request 3 rootId=ai2z5cgt0x21h9b, id=ai2z5cgt0x21h9b
+2026-04-20T08:40:13.044Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ai2z5cgt0x21h9b, id=ai2z5cgt0x21h9b
+2026-04-20T08:40:14.402Z - info: Rendering request 3 finished in 1370 ms rootId=ai2z5cgt0x21h9b, id=ai2z5cgt0x21h9b
+2026-04-20T09:05:19.370Z - info: Initializing jsreport (version: 4.12.0, configuration file: jsreport.config.json, nodejs: 22.20.0)
+2026-04-20T09:05:19.373Z - info: Searching for available extensions in D:\web_plc\plc-dashboard\
+2026-04-20T09:05:19.378Z - info: Extensions location cache C:\Users\kkabe\AppData\Local\Temp\jsreport\core\locations.json contains older information, crawling
+2026-04-20T09:05:23.582Z - info: Found 35 extension(s)
+2026-04-20T09:05:23.670Z - info: Using extension base@4.1.0
+2026-04-20T09:05:23.677Z - info: Using extension child-templates@4.2.0
+2026-04-20T09:05:23.681Z - info: Using extension cli@4.2.0
+2026-04-20T09:05:23.686Z - info: Using extension components@4.1.0
+2026-04-20T09:05:23.688Z - info: Using extension data@4.2.0
+2026-04-20T09:05:23.691Z - info: Using extension express@4.3.1
+2026-04-20T09:05:24.083Z - info: Using extension freeze@4.1.0
+2026-04-20T09:05:24.085Z - info: Using extension fs-store@4.2.0
+2026-04-20T09:05:24.225Z - info: Using extension handlebars@4.1.0
+2026-04-20T09:05:24.226Z - info: Using extension import-export@4.1.0
+2026-04-20T09:05:24.236Z - info: Using extension jsrender@4.1.0
+2026-04-20T09:05:24.237Z - info: Using extension licensing@4.1.0
+2026-04-20T09:05:24.244Z - info: Using extension localization@4.1.0
+2026-04-20T09:05:24.245Z - info: Using extension npm@4.1.0
+2026-04-20T09:05:24.252Z - info: Using extension pdf-utils@4.5.3
+2026-04-20T09:05:24.255Z - info: Using extension reports@4.3.0
+2026-04-20T09:05:24.258Z - info: Using extension tags@4.1.0
+2026-04-20T09:05:24.260Z - info: Using extension text@4.1.0
+2026-04-20T09:05:24.261Z - info: Using extension version-control@4.2.1
+2026-04-20T09:05:24.278Z - info: Using extension assets@4.3.0
+2026-04-20T09:05:24.295Z - info: Using extension authorization@4.2.0
+2026-04-20T09:05:24.302Z - info: Using extension browser-client@4.2.0
+2026-04-20T09:05:24.305Z - info: Using extension chrome-pdf@4.4.0
+2026-04-20T09:05:24.310Z - info: Using extension docx@4.10.1
+2026-04-20T09:05:24.312Z - info: Using extension html-to-xlsx@4.4.0
+2026-04-20T09:05:24.521Z - info: html-to-xlsx detected chrome as available html engine
+2026-04-20T09:05:24.522Z - info: Using extension pptx@4.5.0
+2026-04-20T09:05:24.523Z - info: Using extension scheduling@4.2.0
+2026-04-20T09:05:24.552Z - info: Using extension scripts@4.3.0
+2026-04-20T09:05:24.554Z - info: Using extension static-pdf@4.2.0
+2026-04-20T09:05:24.555Z - info: Using extension studio@4.4.1
+2026-04-20T09:05:24.663Z - info: Using extension xlsx@4.6.1
+2026-04-20T09:05:24.665Z - info: Using extension public-templates@4.1.0
+2026-04-20T09:05:24.666Z - info: Using extension sample-template@4.1.0
+2026-04-20T09:05:24.668Z - info: Using extension studio-theme-dark@4.1.0
+2026-04-20T09:05:24.670Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2026-04-20T09:05:24.670Z - info: Using fs provider for template store.
+2026-04-20T09:05:24.674Z - info: fs store is persisting using fs for D:\web_plc\plc-dashboard\data
+2026-04-20T09:05:24.680Z - info: fs store is loading data
+2026-04-20T09:05:24.700Z - info: fs store is initialized successfully
+2026-04-20T09:05:24.711Z - info: Creating default express app.
+2026-04-20T09:05:24.736Z - info: jsreport server successfully started on http port: 5488
+2026-04-20T09:05:24.742Z - info: Verifying license key free
+2026-04-20T09:05:24.743Z - info: Using free license
+2026-04-20T09:05:24.747Z - info: Initializing worker threads
+2026-04-20T09:05:25.466Z - info: 2 worker threads initialized in 720ms
+2026-04-20T09:05:25.467Z - info: Starting temp files cleanup with 180000ms threshold
+2026-04-20T09:05:25.468Z - info: reporter initialized
+2026-04-20T09:06:36.899Z - info: Initializing jsreport (version: 4.12.0, configuration file: jsreport.config.json, nodejs: 22.20.0)
+2026-04-20T09:06:36.902Z - info: Searching for available extensions in D:\web_plc\plc-dashboard\
+2026-04-20T09:06:36.908Z - info: Extensions location cache contains up to date information, skipping crawling in D:\web_plc\plc-dashboard\
+2026-04-20T09:06:37.019Z - info: Found 35 extension(s)
+2026-04-20T09:06:37.074Z - info: Using extension base@4.1.0
+2026-04-20T09:06:37.079Z - info: Using extension child-templates@4.2.0
+2026-04-20T09:06:37.083Z - info: Using extension cli@4.2.0
+2026-04-20T09:06:37.085Z - info: Using extension components@4.1.0
+2026-04-20T09:06:37.086Z - info: Using extension data@4.2.0
+2026-04-20T09:06:37.087Z - info: Using extension express@4.3.1
+2026-04-20T09:06:37.344Z - info: Using extension freeze@4.1.0
+2026-04-20T09:06:37.346Z - info: Using extension fs-store@4.2.0
+2026-04-20T09:06:37.441Z - info: Using extension handlebars@4.1.0
+2026-04-20T09:06:37.443Z - info: Using extension import-export@4.1.0
+2026-04-20T09:06:37.450Z - info: Using extension jsrender@4.1.0
+2026-04-20T09:06:37.451Z - info: Using extension licensing@4.1.0
+2026-04-20T09:06:37.457Z - info: Using extension localization@4.1.0
+2026-04-20T09:06:37.458Z - info: Using extension npm@4.1.0
+2026-04-20T09:06:37.462Z - info: Using extension pdf-utils@4.5.3
+2026-04-20T09:06:37.464Z - info: Using extension reports@4.3.0
+2026-04-20T09:06:37.467Z - info: Using extension tags@4.1.0
+2026-04-20T09:06:37.468Z - info: Using extension text@4.1.0
+2026-04-20T09:06:37.469Z - info: Using extension version-control@4.2.1
+2026-04-20T09:06:37.480Z - info: Using extension assets@4.3.0
+2026-04-20T09:06:37.490Z - info: Using extension authorization@4.2.0
+2026-04-20T09:06:37.495Z - info: Using extension browser-client@4.2.0
+2026-04-20T09:06:37.497Z - info: Using extension chrome-pdf@4.4.0
+2026-04-20T09:06:37.501Z - info: Using extension docx@4.10.1
+2026-04-20T09:06:37.502Z - info: Using extension html-to-xlsx@4.4.0
+2026-04-20T09:06:37.646Z - info: html-to-xlsx detected chrome as available html engine
+2026-04-20T09:06:37.646Z - info: Using extension pptx@4.5.0
+2026-04-20T09:06:37.648Z - info: Using extension scheduling@4.2.0
+2026-04-20T09:06:37.666Z - info: Using extension scripts@4.3.0
+2026-04-20T09:06:37.668Z - info: Using extension static-pdf@4.2.0
+2026-04-20T09:06:37.669Z - info: Using extension studio@4.4.1
+2026-04-20T09:06:37.745Z - info: Using extension xlsx@4.6.1
+2026-04-20T09:06:37.746Z - info: Using extension public-templates@4.1.0
+2026-04-20T09:06:37.747Z - info: Using extension sample-template@4.1.0
+2026-04-20T09:06:37.749Z - info: Using extension studio-theme-dark@4.1.0
+2026-04-20T09:06:37.750Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2026-04-20T09:06:37.750Z - info: Using fs provider for template store.
+2026-04-20T09:06:37.754Z - info: fs store is persisting using fs for D:\web_plc\plc-dashboard\data
+2026-04-20T09:06:37.759Z - info: fs store is loading data
+2026-04-20T09:06:37.777Z - info: fs store is initialized successfully
+2026-04-20T09:06:37.785Z - info: Creating default express app.
+2026-04-20T09:06:37.799Z - info: jsreport server successfully started on http port: 5488
+2026-04-20T09:06:37.800Z - info: Verifying license key free
+2026-04-20T09:06:37.800Z - info: Using free license
+2026-04-20T09:06:37.803Z - info: Initializing worker threads
+2026-04-20T09:06:38.242Z - info: 2 worker threads initialized in 439ms
+2026-04-20T09:06:38.243Z - info: Starting temp files cleanup with 180000ms threshold
+2026-04-20T09:06:38.244Z - info: reporter initialized
+2026-04-20T09:07:32.235Z - info: Render request 1 queued for execution and waiting for available worker rootId=p8lgyu9aog2az66, id=p8lgyu9aog2az66
+2026-04-20T09:07:32.270Z - info: Starting rendering request 1 rootId=p8lgyu9aog2az66, id=p8lgyu9aog2az66
+2026-04-20T09:07:32.272Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=p8lgyu9aog2az66, id=p8lgyu9aog2az66
+2026-04-20T09:07:34.987Z - info: Rendering request 1 finished in 2756 ms rootId=p8lgyu9aog2az66, id=p8lgyu9aog2az66
+2026-04-20T09:10:28.665Z - info: Render request 2 queued for execution and waiting for available worker rootId=96c1d86et24t2xj, id=96c1d86et24t2xj
+2026-04-20T09:10:28.680Z - info: Starting rendering request 2 rootId=96c1d86et24t2xj, id=96c1d86et24t2xj
+2026-04-20T09:10:28.686Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=96c1d86et24t2xj, id=96c1d86et24t2xj
+2026-04-20T09:10:31.331Z - info: Rendering request 2 finished in 2668 ms rootId=96c1d86et24t2xj, id=96c1d86et24t2xj
+2026-04-20T09:13:47.616Z - info: Render request 3 queued for execution and waiting for available worker rootId=lbzdlscx60u6hv2, id=lbzdlscx60u6hv2
+2026-04-20T09:13:47.627Z - info: Starting rendering request 3 rootId=lbzdlscx60u6hv2, id=lbzdlscx60u6hv2
+2026-04-20T09:13:47.627Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=lbzdlscx60u6hv2, id=lbzdlscx60u6hv2
+2026-04-20T09:13:48.586Z - info: Rendering request 3 finished in 971 ms rootId=lbzdlscx60u6hv2, id=lbzdlscx60u6hv2
+2026-04-20T09:13:57.389Z - info: Render request 4 queued for execution and waiting for available worker rootId=68x06ff1was49ok, id=68x06ff1was49ok
+2026-04-20T09:13:57.399Z - info: Starting rendering request 4 rootId=68x06ff1was49ok, id=68x06ff1was49ok
+2026-04-20T09:13:57.400Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=68x06ff1was49ok, id=68x06ff1was49ok
+2026-04-20T09:13:58.138Z - info: Rendering request 4 finished in 751 ms rootId=68x06ff1was49ok, id=68x06ff1was49ok
+2026-04-20T09:46:03.986Z - info: Render request 5 queued for execution and waiting for available worker rootId=ggvumsr23m9bll7, id=ggvumsr23m9bll7
+2026-04-20T09:46:04.032Z - info: Starting rendering request 5 rootId=ggvumsr23m9bll7, id=ggvumsr23m9bll7
+2026-04-20T09:46:04.034Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=ggvumsr23m9bll7, id=ggvumsr23m9bll7
+2026-04-20T09:46:05.305Z - info: Rendering request 5 finished in 1324 ms rootId=ggvumsr23m9bll7, id=ggvumsr23m9bll7
+2026-04-20T09:48:09.555Z - info: Render request 6 queued for execution and waiting for available worker rootId=857qtn06eajlw6h, id=857qtn06eajlw6h
+2026-04-20T09:48:09.588Z - info: Starting rendering request 6 rootId=857qtn06eajlw6h, id=857qtn06eajlw6h
+2026-04-20T09:48:09.588Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=857qtn06eajlw6h, id=857qtn06eajlw6h
+2026-04-20T09:48:10.332Z - info: Rendering request 6 finished in 778 ms rootId=857qtn06eajlw6h, id=857qtn06eajlw6h
+2026-04-20T09:52:42.436Z - info: Render request 7 queued for execution and waiting for available worker rootId=jlt9sy5nkv6s4ss, id=jlt9sy5nkv6s4ss
+2026-04-20T09:52:42.447Z - info: Starting rendering request 7 rootId=jlt9sy5nkv6s4ss, id=jlt9sy5nkv6s4ss
+2026-04-20T09:52:42.448Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=jlt9sy5nkv6s4ss, id=jlt9sy5nkv6s4ss
+2026-04-20T09:52:43.140Z - info: Rendering request 7 finished in 707 ms rootId=jlt9sy5nkv6s4ss, id=jlt9sy5nkv6s4ss
+2026-04-20T09:56:56.598Z - info: Render request 8 queued for execution and waiting for available worker rootId=q3f0b3qn61wcow0, id=q3f0b3qn61wcow0
+2026-04-20T09:56:56.610Z - info: Starting rendering request 8 rootId=q3f0b3qn61wcow0, id=q3f0b3qn61wcow0
+2026-04-20T09:56:56.610Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=q3f0b3qn61wcow0, id=q3f0b3qn61wcow0
+2026-04-20T09:56:56.655Z - info: Starting rendering (child) request rootId=q3f0b3qn61wcow0, id=u1spad15oc07bwn
+2026-04-20T09:56:56.656Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=q3f0b3qn61wcow0, id=u1spad15oc07bwn
+2026-04-20T09:56:56.739Z - info: Rendering (child) request finished in 143 ms rootId=q3f0b3qn61wcow0, id=u1spad15oc07bwn
+2026-04-20T09:56:57.607Z - warn: Page request failed: GET (image) https://via.placeholder.com/400x120?text=ASCON+MATRIX, failure: net::ERR_CONNECTION_CLOSED rootId=q3f0b3qn61wcow0, id=q3f0b3qn61wcow0
+2026-04-20T09:56:58.672Z - info: Rendering request 8 finished in 2076 ms rootId=q3f0b3qn61wcow0, id=q3f0b3qn61wcow0
+2026-04-20T09:59:20.120Z - info: Render request 9 queued for execution and waiting for available worker rootId=8v7lwe7bq416z5o, id=8v7lwe7bq416z5o
+2026-04-20T09:59:20.163Z - info: Starting rendering request 9 rootId=8v7lwe7bq416z5o, id=8v7lwe7bq416z5o
+2026-04-20T09:59:20.164Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=8v7lwe7bq416z5o, id=8v7lwe7bq416z5o
+2026-04-20T09:59:20.207Z - info: Starting rendering (child) request rootId=8v7lwe7bq416z5o, id=8h8wnsk5rrywnlp
+2026-04-20T09:59:20.208Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=8v7lwe7bq416z5o, id=8h8wnsk5rrywnlp
+2026-04-20T09:59:20.226Z - info: Rendering (child) request finished in 108 ms rootId=8v7lwe7bq416z5o, id=8h8wnsk5rrywnlp
+2026-04-20T09:59:20.902Z - warn: Page request failed: GET (image) https://via.placeholder.com/400x120?text=ASCON+MATRIX, failure: net::ERR_CONNECTION_CLOSED rootId=8v7lwe7bq416z5o, id=8v7lwe7bq416z5o
+2026-04-20T09:59:21.843Z - info: Rendering request 9 finished in 1725 ms rootId=8v7lwe7bq416z5o, id=8v7lwe7bq416z5o
+2026-04-20T10:01:22.743Z - info: Render request 10 queued for execution and waiting for available worker rootId=aoqd3yib9ag4dvk, id=aoqd3yib9ag4dvk
+2026-04-20T10:01:22.764Z - info: Starting rendering request 10 rootId=aoqd3yib9ag4dvk, id=aoqd3yib9ag4dvk
+2026-04-20T10:01:22.765Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=aoqd3yib9ag4dvk, id=aoqd3yib9ag4dvk
+2026-04-20T10:01:22.797Z - info: Starting rendering (child) request rootId=aoqd3yib9ag4dvk, id=ur3si5ojh3npkbh
+2026-04-20T10:01:22.797Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=aoqd3yib9ag4dvk, id=ur3si5ojh3npkbh
+2026-04-20T10:01:22.816Z - info: Rendering (child) request finished in 75 ms rootId=aoqd3yib9ag4dvk, id=ur3si5ojh3npkbh
+2026-04-20T10:01:23.384Z - warn: Page request failed: GET (image) https://via.placeholder.com/400x120?text=ASCON+MATRIX, failure: net::ERR_CONNECTION_CLOSED rootId=aoqd3yib9ag4dvk, id=aoqd3yib9ag4dvk
+2026-04-20T10:01:23.807Z - info: Rendering request 10 finished in 1066 ms rootId=aoqd3yib9ag4dvk, id=aoqd3yib9ag4dvk
+2026-04-20T10:01:46.355Z - info: Render request 11 queued for execution and waiting for available worker rootId=shyq6hhaowiu21c, id=shyq6hhaowiu21c
+2026-04-20T10:01:46.362Z - info: Starting rendering request 11 rootId=shyq6hhaowiu21c, id=shyq6hhaowiu21c
+2026-04-20T10:01:46.362Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=shyq6hhaowiu21c, id=shyq6hhaowiu21c
+2026-04-20T10:01:46.374Z - info: Starting rendering (child) request rootId=shyq6hhaowiu21c, id=di06h0iis2liih4
+2026-04-20T10:01:46.374Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=shyq6hhaowiu21c, id=di06h0iis2liih4
+2026-04-20T10:01:46.382Z - info: Rendering (child) request finished in 28 ms rootId=shyq6hhaowiu21c, id=di06h0iis2liih4
+2026-04-20T10:01:46.847Z - warn: Page request failed: GET (image) https://via.placeholder.com/400x120?text=ASCON+MATRIX, failure: net::ERR_CONNECTION_CLOSED rootId=shyq6hhaowiu21c, id=shyq6hhaowiu21c
+2026-04-20T10:01:47.287Z - info: Rendering request 11 finished in 933 ms rootId=shyq6hhaowiu21c, id=shyq6hhaowiu21c
+2026-04-20T10:02:17.736Z - info: Render request 12 queued for execution and waiting for available worker rootId=ph7a5o3no3da6ff, id=ph7a5o3no3da6ff
+2026-04-20T10:02:17.763Z - info: Starting rendering request 12 rootId=ph7a5o3no3da6ff, id=ph7a5o3no3da6ff
+2026-04-20T10:02:17.763Z - info: Rendering template { name: Laporan-Matrix, recipe: chrome-pdf, engine: handlebars, preview: false } rootId=ph7a5o3no3da6ff, id=ph7a5o3no3da6ff
+2026-04-20T10:02:17.775Z - info: Starting rendering (child) request rootId=ph7a5o3no3da6ff, id=ezsfgp2xdt57clw
+2026-04-20T10:02:17.775Z - info: Rendering anonymous template { recipe: html, engine: handlebars } rootId=ph7a5o3no3da6ff, id=ezsfgp2xdt57clw
+2026-04-20T10:02:17.793Z - info: Rendering (child) request finished in 58 ms rootId=ph7a5o3no3da6ff, id=ezsfgp2xdt57clw
+2026-04-20T10:02:18.251Z - warn: Page request failed: GET (image) https://via.placeholder.com/400x120?text=ASCON+MATRIX, failure: net::ERR_CONNECTION_CLOSED rootId=ph7a5o3no3da6ff, id=ph7a5o3no3da6ff
+2026-04-20T10:02:18.621Z - info: Rendering request 12 finished in 886 ms rootId=ph7a5o3no3da6ff, id=ph7a5o3no3da6ff

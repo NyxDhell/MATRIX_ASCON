@@ -1,0 +1,20 @@
+{
+    "name": "Laporan-Matrix",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "data": {
+        "shortid": "B8EGRykFv"
+    },
+    "shortid": "DIeigHNymW",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1776676049247
+    },
+    "modificationDate": {
+        "$$date": 1776679280318
+    },
+    "_id": "xlyBVpGxEyHceB0L",
+    "$entitySet": "templates"
+}

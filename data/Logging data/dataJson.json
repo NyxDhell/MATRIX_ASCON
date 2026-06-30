@@ -1,0 +1,28 @@
+{
+  "reportDate": "20 April 2026",
+  "penjelasanTren": "Berdasarkan grafik di atas, Suhu Extruder (Garis Merah) mengalami kenaikan signifikan pada pukul 11:00 mencapai 75°C, namun berangsur turun. Water Treatment (Garis Teal) stabil di kisaran 40-45°C. Selisih suhu maksimal antar node adalah 30°C pada jam puncak.",
+  "penjelasanBar": "Rata-rata akumulasi suhu/beban menunjukkan Extruder memakan daya dan menghasilkan panas 60% lebih tinggi dibandingkan sistem Water Treatment. Disarankan melakukan pengecekan sistem pendingin pada Extruder.",
+  "penjelasanDoughnut": "Dalam 24 jam terakhir, sistem terpantau dalam kondisi normal (80%), namun terdapat 15% waktu dimana sistem masuk ke fase 'Warning' (Peringatan), dan 5% Error pada node tertentu.",
+  "chartData": {
+    "trend": {
+      "labels": ["08:00", "09:00", "10:00", "11:00", "12:00"],
+      "datasets": [
+        { "label": "Extruder", "data": [65, 68, 70, 75, 72], "borderColor": "#CD3053", "backgroundColor": "rgba(205, 48, 83, 0.1)", "fill": true, "tension": 0.4 },
+        { "label": "Water Treatment", "data": [40, 42, 41, 45, 44], "borderColor": "#2A6C7A", "backgroundColor": "rgba(42, 108, 122, 0.1)", "fill": true, "tension": 0.4 }
+      ]
+    },
+    "bar": {
+      "labels": ["Senin", "Selasa", "Rabu", "Kamis", "Jumat"],
+      "datasets": [
+        { "label": "Rata-rata Extruder", "data": [70, 72, 71, 74, 70], "backgroundColor": "#CD3053" },
+        { "label": "Rata-rata Water Treatment", "data": [42, 41, 43, 44, 42], "backgroundColor": "#2A6C7A" }
+      ]
+    },
+    "doughnut": {
+      "labels": ["Normal (Aman)", "Warning (Peringatan)", "Error (Kritis)"],
+      "datasets": [
+        { "data": [80, 15, 5], "backgroundColor": ["#10b981", "#f59e0b", "#CD3053"] }
+      ]
+    }
+  }
+}

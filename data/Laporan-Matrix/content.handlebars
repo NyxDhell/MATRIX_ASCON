@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Typography & Global */
+        body { font-family: 'Helvetica', sans-serif; margin: 0; color: #1e293b; background: white; }
+        .page-break { page-break-before: always; }
+        
+        /* COVER PAGE STYLES */
+        .cover-page {
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 50px;
+            text-align: center;
+        }
+        .top-stripe {
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 12px;
+            background: linear-gradient(90deg, #2A6C7A 0%, #CD3053 100%);
+        }
+        .cover-logo { width: 280px; margin-top: 100px; margin-bottom: 40px; }
+        .cover-title { 
+            font-size: 42pt; font-weight: 800; color: #2A6C7A; 
+            margin: 0; line-height: 1.1; letter-spacing: -1.5px;
+        }
+        .cover-divider { 
+            width: 60px; height: 5px; background-color: #CD3053; 
+            margin: 35px auto; border-radius: 2px;
+        }
+        .cover-subtitle { font-size: 18pt; color: #64748b; font-weight: 300; letter-spacing: 2px; }
+        
+        .cover-footer { width: 85%; border-top: 1px solid #e2e8f0; padding-top: 30px; margin-bottom: 20px; }
+        .meta-info { font-size: 11pt; color: #475569; line-height: 1.8; text-align: center; }
+
+        /* CONTENT STYLES */
+        .content-body { padding: 40px 50px; }
+        .section-header { border-left: 5px solid #CD3053; padding-left: 15px; margin: 30px 0 20px 0; }
+        .section-header h2 { margin: 0; color: #2A6C7A; text-transform: uppercase; font-size: 16pt; }
+        
+        .chart-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 15px; padding: 20px; margin-bottom: 20px; }
+        .insight-card { background: #eff6f7; border-left: 4px solid #2A6C7A; padding: 15px 20px; border-radius: 0 10px 10px 0; font-size: 10pt; line-height: 1.6; margin-bottom: 30px; }
+        
+        /* Grid untuk Chart Kecil */
+        .chart-grid { display: flex; gap: 20px; margin-bottom: 20px; }
+        .chart-col { flex: 1; }
+    </style>
+</head>
+<body>
+
+    <div class="cover-page">
+        <div class="top-stripe"></div>
+        <div class="main-content">
+            <img src="https://via.placeholder.com/400x120?text=ASCON+MATRIX" class="cover-logo" alt="Logo">
+            <h1 class="cover-title">LAPORAN ANALITIK<br>SISTEM MONITORING</h1>
+            <div class="cover-divider"></div>
+            <h2 class="cover-subtitle">ASCON HUB | MATRIX SCALE</h2>
+        </div>
+        <div class="cover-footer">
+            <div class="meta-info">
+                <p>Dicetak Untuk: <strong>PT. ASCON MULTI PRATAMA</strong></p>
+                <p>Periode Data: <strong>{{reportDate}}</strong></p>
+                <p style="font-size: 9pt; color: #94a3b8; margin-top: 20px;">&copy; 2026 Ascon Hub Monitoring System - Industrial Excellence</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="content-body">
+        <div class="section-header">
+            <h2>I. Tren Historical Parameter</h2>
+        </div>
+        <div class="chart-box">
+            <canvas id="trendChart" style="width: 100%; height: 300px;"></canvas>
+        </div>
+        <div class="insight-card">
+            <strong>Analisis Tren:</strong><br>
+            {{penjelasanTren}}
+        </div>
+
+        <div class="section-header">
+            <h2>II. Komparasi & Distribusi Status</h2>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-col">
+                <div class="chart-box" style="height: 250px;">
+                    <p style="font-size: 9pt; font-weight: bold; text-align: center; margin-top: 0;">Rata-rata Parameter</p>
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-col">
+                <div class="chart-box" style="height: 250px;">
+                    <p style="font-size: 9pt; font-weight: bold; text-align: center; margin-top: 0;">Persentase Status Sistem</p>
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="insight-card">
+            <strong>Kesimpulan Komparasi:</strong><br>
+            {{penjelasanBar}} {{penjelasanDoughnut}}
+        </div>
+    </div>
+
+    <script>
+        const reportData = {{{JSONstringify chartData}}};
+        
+        // 1. Line Chart - Trend
+        new Chart(document.getElementById('trendChart'), {
+            type: 'line',
+            data: reportData.trend,
+            options: { 
+                animation: false,
+                scales: { y: { beginAtZero: true, grid: { color: '#f1f5f9' } } } 
+            }
+        });
+
+        // 2. Bar Chart - Komparasi
+        new Chart(document.getElementById('barChart'), {
+            type: 'bar',
+            data: reportData.bar,
+            options: { 
+                animation: false,
+                plugins: { legend: { display: false } },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // 3. Doughnut Chart - Status
+        new Chart(document.getElementById('doughnutChart'), {
+            type: 'doughnut',
+            data: reportData.doughnut,
+            options: { 
+                animation: false,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+</body>
+</html>
